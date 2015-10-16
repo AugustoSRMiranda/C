@@ -1,0 +1,15 @@
+1
+Paulo
+Bcc
+9
+
+2
+Bruno
+Bcc
+10
+
+6
+Vini
+Med
+10
+

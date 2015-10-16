@@ -1,0 +1,20 @@
+#include <stdio.h>
+void main( ){
+float oper1, oper2;
+char op;
+while(1){
+printf(“Digite: operando1 operador operando2\n”);
+scanf(“%f %c %f”, &oper1, &op, &oper2);
+switch(op){
+case ‘+’: printf(“%f+%f = %f\n”, oper1, oper2, oper1+oper2);
+break;
+case ‘-’: printf(“%f-%f = %f\n”, oper1, oper2, oper1-oper2);
+break;
+case ‘*’: printf(“%f*%f = %f\n”, oper1, oper2, oper1*oper2); 
+ break;
+case ‘/’: printf(“%f/%f = %f\n”, oper1, oper2, oper1/oper2);
+ break;
+default: printf(“Operador %c desconhecido!\n”, op);
+}
+}
+}
