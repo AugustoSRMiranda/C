@@ -19,24 +19,26 @@ float FahrParaCelsius(float a)
 int main() {
     int a;
     char t;
-
+    
+    setlocale(LC_ALL,"portuguese");
+    
     printf("Digite a temperatura: ");
     scanf("%d",&a);
-    printf("Digite o sistema de conversao: \n");
+    printf("Digite o sistema de convers√£o: \n");
     printf("Digite [c] para celsius e [f] para fahrenheit \n");
     fflush(stdin);
     scanf("%c",&t);
 
     if (t=='f')
     {
-       printf("A temperatura em Fahrenheit È: %.2f\n",CelsiusParaFahr(a));
+       printf("A temperatura em Fahrenheit √©: %.2f\n",CelsiusParaFahr(a));
     }
     else if (t=='c')
     {
-       printf("A temperatura em celsius È: %.2f\n",FahrParaCelsius(a));
+       printf("A temperatura em celsius √©: %.2f\n",FahrParaCelsius(a));
     }
     else {
-       printf("Caracter invalido!\n\n");
+       printf("Caractere invalido!\n\n");
     }
 
     system("pause");
